@@ -1,0 +1,190 @@
+/*reseting before starting to the project*/
+
+*{
+    box-sizing: border-box;/*/*taşmaları engeller*/
+    margin:0;
+    text-decoration:none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/*HEADER SECTION*/
+
+header.header{
+
+    padding: 15px;
+    line-height: 36px; /*tüm üst tarafı aynı hizaya sokmak için*/
+
+}
+
+.header__left{
+    float: left;
+    
+}
+
+.header__right{
+    float: right;
+
+}
+
+
+/*
+ul li{
+    text-decoration: none;
+    body içerisindeki çalışmasa böyle de yapılabilir 
+}
+*/ 
+/*ul içerisindeki li'leri yanyana koymak için*/
+/*header*/
+ ul li {
+    /*sadece inline dersek top ve bottom padding vermekte sıkıntı çekeriz. inline da width te veremeyiz ama inline block yaptığımızda bunları verebiliriz*/
+    display: inline-block;
+}
+
+/* header tüm ul içerisindeki li içerisinde olan a'ları tek sıraya koy dedik burada eğer biz header ifadesini kaldırırsak */
+ul li a {
+
+ 
+    color: gray;
+    padding: 0.49rem; /*araları açmak için padding verdik*/
+    opacity: 0.8;/*biraz silik oldu opacity ile*/
+}
+
+
+.header__right--appicon{
+
+ vertical-align: middle;/*top'taki elementleri hizalamak için kullandık bunu*/
+}
+
+.header__right--button{
+
+    background-color: rgb(89, 89, 121);
+    color: greenyellow;
+    border: 1px solid white;
+    width: 96px;
+    height:36px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.header__right--button:hover{
+
+    box-shadow: rgb(61, 60, 60) 2.5px 2.5px 3px 5px;/*x ekseni,y ekseni,bulanıklık(bluring yani),yayılma oranı sırayla*/
+    cursor: pointer;
+}
+
+/* header tüm ul içerisindeki li lerin içinde olan a ların içindeki şeylere underline vermek için header'ı yoruma alabiliriz*/ ul li a:hover{ */
+    /*en son gelen her zaman ezer. normalde biz yukarıda text decoration none yapmıştık ama en son yaptığımız bu underline diğerini ezdi en sonda geldiği için*/
+    text-decoration: underline;
+}
+
+
+/*MAIN SECTION*/
+
+main{
+
+    /* border: 1px solid red; */
+    margin-top: 200px;/*margin top ile google amblemi ile yukarısı arasındaki mesafeyi açıyoruz*/
+    text-align: center;
+}
+
+.main__logo{
+
+    height: 92px;
+    width: 272px;
+   
+}
+
+.main__search--bar{
+    border: 2px solid red;
+    border-radius: 20px;
+    width: 460px;
+    height: 39px;
+    margin: 20px auto; /*yukarıdan 20 aşağıdan 20px margin verdik. sağdan auto soldan da auto verdik*/
+}
+
+.main__search-bar--find{
+
+    width: 40px;
+    vertical-align: middle;
+    border: none;
+}
+.main__searchbar--input{
+
+    margin-top:2px ;
+    width: 380px;
+    height: 20px;
+    font-size: 20px;
+    padding: 2px;
+    border: none;
+ 
+ 
+  /*orjinal google de inputa tıkladığımızda o borderlar belli olmuyor bunu outline:none ile yapacaz*/
+  outline: none;
+}
+
+.main__searchbar--microphone{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.main__buttons{
+
+
+}
+
+.main__buttons--left,.main__buttons--right{
+
+    width: 122px;
+    height: 36px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    margin: 30px 0;
+}
+
+.main__buttons--left:hover,.main__buttons--right:hover{
+
+    border: 1px solid gray;
+    box-shadow: gray 1px 2px 5px;
+    cursor: pointer;
+
+}
+
+.main__language a:hover{
+
+    text-decoration: underline;
+}
+
+
+/*FOOTER SECTION*/
+
+.footer{
+
+    position: fixed;/*fixed olduğunda ona konum vermemiz lazım. fixed yaptığımız zaman width 100% olmalıdır*/
+    bottom: 0; 
+    background-color: #dadce0;
+    width: 100%;
+}
+
+.footer__country{
+
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.footer__bottom--left{
+    float: left;
+    padding: 10px;
+
+}
+
+.footer__bottom--right{
+    float: right;
+    padding: 10px;
+
+}
