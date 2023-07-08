@@ -1,0 +1,28 @@
+
+
+.yazı{
+
+    background-color: aqua;
+    transform: scaleX(100px);
+    width: 50vw;
+    font-size: 2rem;
+    transition: background-color 1s, transform 1s;
+    /* transition: all 1s; */
+
+}
+
+.yazı:hover{
+
+   /* transform: translate(100px); */
+   /* transform: scaleX(2); */
+   transform: scale(98%) translateX(50px); /*üzerine basma efekti verir ve sağa kaydırır*/
+   background-color: hotpink;
+   /* transform:  translateX(50px); */
+
+}
+
+.yazı:active{
+
+
+
+}
